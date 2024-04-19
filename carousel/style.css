@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(6, 9, 32);
+    color: white;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main-page{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.review-page{
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 35px;
+    box-shadow: rgba(253, 247, 247, 0.25) 0px 54px 55px, rgba(249, 239, 239, 0.12) 0px -12px 30px, rgba(247, 233, 233, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(41, 30, 30, 0.986) 0px -3px 5px;
+}
+
+@media screen and (max-width: 806px) {
+    .review-page{
+        padding: 10px;
+        width: 90%;
+    }
+    #nickname{
+        font-size: 25px;
+    }
+    #role{
+        font-size: 15px;
+    }
+    #desc{
+        font-size: 13px;
+    }
+    .image-box{
+        width: 50%;
+    }
+    
+}
+.image-box{
+    width: 100%;
+}
+.image-box img{
+    width: 150px;
+    border-radius: 50%;
+}
+#role, .mybtn, #nickname{
+    margin: 15px 0;
+}
+.mybtn button{
+    border: none;
+    outline: none;
+    font-weight: bold;
+    padding: 2px 25px;
+}
+.heading{
+    cursor: pointer;
+    padding: 5px 10px;
+    text-align: center;
+    /* margin: 20px 0px; */
+}
